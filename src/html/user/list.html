@@ -1,0 +1,14 @@
+{% extends "../layout.html" %}
+
+{% block body %}
+<div>用户数:{{ users.length }}</div>
+<ul>
+  {% for user in users %}
+  <li>name: {{ user.name }}, email: {{ user.email}}</li>
+  {% endfor %}
+</ul>
+<form action="/users/user" method="post">
+  <input type="text" name="name">
+  <input type="submit" value="提交">
+</form>
+{% endblock %}
