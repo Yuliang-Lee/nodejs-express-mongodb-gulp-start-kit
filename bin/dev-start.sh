@@ -4,4 +4,4 @@ cd $DIR/../
 export NODE_PATH=.
 export NODE_ENV=development
 
-gulp startDev
+npm run start

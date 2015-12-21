@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %} {% endblock %} · chess</title>
+  <link rel="stylesheet" href="/static/dist/css/common.css">
+  {% block header %}
+  {% endblock %}
+</head>
+<body>
+
+{% block body %}{% endblock %}
+
+{# 下面的注释不能删,用在生产环境下自动构建替换成压缩的lib.js! #}
+{# 里面的js库列表需要和gulp/common.js里的一致 #}
+<!-- build:js /static/dist/js/lib.js -->
+<script src="/static/vendor/jquery/jquery-2.1.4.js"></script>
+<script src="/static/vendor/react/react-0.14.3.js"></script>
+<script src="/static/vendor/react/react-dom-0.14.3.js"></script>
+<!-- /build -->
+
+{% block footer %}{% endblock %}
+</body>
+</html>

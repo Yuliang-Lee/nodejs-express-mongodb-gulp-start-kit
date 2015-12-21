@@ -7,9 +7,12 @@
   },
   "description": "a scaffolding project for set up the nodejs project quickly",
   "keywords": ["nodejs", "express", "mongodb", "react"],
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "NODE_PATH=. gulp startDev"
+    "start": "NODE_PATH=. gulp startDev",
+    "dev": "gulp dev",
+    "prod": "NODE_PATH=. gulp prod"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.3.13",

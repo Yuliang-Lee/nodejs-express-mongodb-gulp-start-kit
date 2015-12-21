@@ -10,9 +10,5 @@ router.get('/', function(req, res, next) {
 
 });
 
-/* GET hive page. */
-//router.get('/hive', function(req, res, next) {
-//  res.render('queries/hive', { title: 'hive 查询' });
-//});
 
 module.exports = router;
